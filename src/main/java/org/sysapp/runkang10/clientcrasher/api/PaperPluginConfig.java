@@ -1,4 +1,4 @@
-package org.sysapp.runkang10.clientcrasher.utils;
+package org.sysapp.runkang10.clientcrasher.api;
 
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.sysapp.runkang10.clientcrasher.ClientCrasher;
@@ -7,12 +7,14 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.List;
 
+
 public class PaperPluginConfig {
     private final static ClientCrasher instance = ClientCrasher.getInstance();
     private final YamlConfiguration ConfigLoader;
 
     public PaperPluginConfig() {
         InputStream stream = instance.getResource("paper-plugin.yml");
+        assert stream != null;
         ConfigLoader = YamlConfiguration.loadConfiguration(new InputStreamReader(stream));
     }
 

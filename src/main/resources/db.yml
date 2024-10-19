@@ -1,0 +1,7 @@
+# List of Players to Crash them every time they join.
+# I DON'T RECOMMEND to edit this file because you can add, edit and remove
+# using /crashunban PLAYER_NAME.
+crashlist:
+
+# DO NOT TOUCH this option otherwise the plugin won't work anymore.
+version: ${configVersion}
