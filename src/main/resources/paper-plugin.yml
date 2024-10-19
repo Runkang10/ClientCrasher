@@ -1,0 +1,7 @@
+name: ClientCrasher
+version: '1.0.0'
+main: org.sysapp.runkang10.clientcrasher.ClientCrasher
+api-version: '1.21'
+load: STARTUP
+authors: [ Runkang10 ]
+description: The worst punishment for cheaters!
